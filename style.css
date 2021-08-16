@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back{
+   width: 100%;
+   height: 100%;
+   background-color: cadetblue;
+   border-radius: 0em 1em 1em 0em;
+}
+.main{
+
+ 
+    display:flex;
+    height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.1;
+  padding: 1rem;
+  width: 100%;
+  background-image:url("https://media.istockphoto.com/photos/desktop-source-code-and-wallpaper-by-computer-language-with-coding-picture-id1026452206");
+  /* filter: blur(5px);  */
+}
+body {
+  display: flex;
+  
+
+  
+  
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+ width: 20rem;
+  border-radius: 1em 0em 0em 1em;
+  background: #a5cfecaa;
+  transition: all 500ms ease;
+  overflow: hidden;
+}
+
+.sidebar.active {
+  width: 4rem;
+  height: min-content;
+}
+article{
+    display: inline;
+    width: 80%;
+    background-color: aqua;
+}
+
+.hamburger {
+  width: 1.6rem;
+  height: 1.6rem;
+  inset: 2rem;
+  transform: translate(-50%, -50%);
+  position: relative;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background: linear-gradient(
+    #0007 15%,
+    0%,
+    #0000 30%,
+    0%,
+    #0007 45%,
+    0%,
+    #0000 60%,
+    0%,
+    #0007 75%,
+    0%,
+    #0000
+  );
+}
+
+.user {
+  opacity: 1;
+  border-bottom: 1px solid #0002;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  transition: opacity 270ms ease-in-out;
+}
+
+.user.fade {
+  z-index: -1;
+  inset: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0ms ease-in-out;
+}
+.user i {
+  position: relative;
+  display: flex;
+  width: 8.5rem;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background-color: #ffffff90;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+  color: #999fff;
+}
+
+.userName {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.userText {
+  font-style: italic;
+  color: #666;
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.navigation {
+  width: 100%;
+  position: relative;
+}
+
+.nav-list {
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-radius: 0.35em;
+  background: #ffffff60;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 2em;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}
+
+a:hover {
+  background: #0001;
+}
+
+.fab {
+  align-items: center;
+  margin-left: 0.5rem;
+  display: inline-flex;
+  font-size: 2rem;
+  color: hsl(243, 80%, 40%);
+  -webkit-text-stroke: thin #99fa;
+}
