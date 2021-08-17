@@ -17,12 +17,14 @@
             </header>
             <nav class="navigation">
               <ul class="nav-list">
-                <li class="list-item active"><a href="#"><i class="fab fa-codepen"></i>Perfil pessoal</a></li>
-                <li class="list-item">
-                  <a href="#"><i class="fab fa-linux"></i>Formação</a>
+                <li class="list-item active">
+                  <a href="#" onclick="page1()"><i class="fab fa-codepen"></i>Perfil pessoal</a>
                 </li>
                 <li class="list-item">
-                  <a href="#"><i class="fab fa-html5"></i>Habilidades</a>
+                  <a href="#" onclick="page2()" ><i class="fab fa-linux"></i>Formação</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" ><i class="fab fa-html5"></i>Habilidades</a>
                 </li>
                 <li class="list-item">
                   <a href="#"><i class="fab fa-css3-alt"></i>Experiência</a>
@@ -35,7 +37,7 @@
             
         </main>
         <div class="back">
-            <article class="center" id="sobre">
+            <article class="center" id="page1">
               <div class="code">
                 <div class="pc">
                   <div class="prompt">
@@ -47,9 +49,23 @@
                     
                 </div>
             </article>
-            <!-- <article class="center" id="formacao">
+            <article class="center" id="page2">
+              <div class="circle_text" id ="formacao1">
+              <div class="circle img_radius" style="background-image: url('https://www.ufrn.br/resources/documentos/identidadevisual/brasao/brasao_flat.png')"> </div>
+              <p>Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+            </div>
+            <div class="circle_text"id ="formacao2">
+              <div class="circle img_radius" style="background-image: url('https://portal.ifrn.edu.br/campus/paudosferros/noticias/proposta-da-lei-orcamentaria-2020-preocupa-ifrn/image_preview')"> </div>
+              <p>Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+            </div>
+            </article>
+            <article class="center" id="page3">
+              
+            </article>
+            <article class="center" id="page4">
+              
                 
-            </article> -->
+            </article>
         </div>
     </div>
     </body>
@@ -60,7 +76,14 @@
         
 </html>
 <script>
+  const p1 = document.getElementById("page1");
+  const p2 = document.getElementById("page2");
+  const p3 = document.getElementById("page3");
+  const p4 = document.getElementById("page4");
   const saida = document.querySelector(".saida");
+  const formacao1 = document.getElementById("formacao1");
+  const formacao2 = document.getElementById("formacao2");
+  const sidebar = document.getElementsByClassName("sidebar");
 
 function digitacao(texto, contador) {
   if (contador < texto.length) {
@@ -68,11 +91,64 @@ function digitacao(texto, contador) {
       saida.textContent += texto.charAt(contador);
       contador++;
       digitacao(texto, contador);
-    }, 89);
+    }, 90);
   }
 }
 
 digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
+
+
+function animacaoFormacao(margin_rigth, formacao) {
+  if (0 <= margin_rigth) {
+    setTimeout(() => {
+      formacao.style.marginLeft =margin_rigth;
+      margin_rigth=margin_rigth-1;
+      animacaoFormacao(margin_rigth,formacao);
+    }, 1);
+    
+  }
+  if(margin_rigth==0 && formacao==formacao1){
+    formacao2.style.display="flex";
+      animacaoFormacao(100,formacao2)
+
+    }
+  
+}
+
+
+
+
+function page1() {
+  clearTimeout(digitacao)
+  p1.style.display = "block";
+  p2.style.display = "none";
+  p3.style.display = "none";
+  p4.style.display = "none";
+ }
+function page2() {
+
+  p1.style.display = "none";
+  p2.style.display = "block";
+  p3.style.display = "none";
+  p4.style.display = "none";
+  formacao2.style.display="none";
+  animacaoFormacao(100,formacao1)
+}
+function page3() {
+  p1.style.display = "none";
+  p2.style.display = "none";
+  p3.style.display = "block";
+  p4.style.display = "none";
+}
+function page4() { 
+  p1.style.display = "none";
+  p2.style.display = "none";
+  p3.style.display = "none";
+  p4.style.display = "block";
+  
+}
+
+
 
 
 </script>

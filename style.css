@@ -7,13 +7,32 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.circle{
+  margin: 2em;
+    width: 22em;
+    background-color: aliceblue;
+    height: 10em;
+    border-radius: 10em;
+}
+.img_radius{
+    background-position: center;
+    background-size: cover;
+}
 .back{
    width: 100%;
    height: 100%;
-   background-color: cadetblue;
    border-radius: 0em 1em 1em 0em;
+   background-image: url("assets/img/binario.png") ;
 }
+.circle_text{
+  background-color: #7c83f7;
+  color: white;
+  width: 50em;
+  display: flex;
+  align-items: center;
+  margin: 2em;
+}
+
 .main{
 
  
@@ -25,6 +44,7 @@
   padding: 1rem;
   width: 100%;
   background-image:url("https://thumbs.dreamstime.com/b/tela-do-fundo-da-tecnologia-do-c%C3%B3digo-fonte-e-do-sum%C3%A1rio-95206313.jpg");
+  background-size:cover
   /* filter: blur(5px);  */
 }
 body {
