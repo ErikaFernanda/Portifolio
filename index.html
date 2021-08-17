@@ -36,16 +36,12 @@
         </main>
         <div class="back">
             <article class="center" id="sobre">
-                <div class="caderno">
-                    <div class="texto-caderno">
-                        <h1>Sempre em busca de
-                            conhecimento tecnológico no
-                            mundo da musica , fotografia ,
-                            jogos , robótica. Mas existe uma
-                            atenção redobrada para a
-                            programação , mas precisamente
-                            na linguagem JAVA</h1>
+                <div class="pc">
+                  <div class="prompt">
+                    <div class="texto-prompt">
+                        <p class="saida" >C:\erikafernanda> </p>
                     </div>
+                  </div>
                     
                 </div>
             </article>
@@ -61,3 +57,20 @@
        
         
 </html>
+<script>
+  const saida = document.querySelector(".saida");
+
+function digitacao(texto, contador) {
+  if (contador < texto.length) {
+    setTimeout(() => {
+      saida.textContent += texto.charAt(contador);
+      contador++;
+      digitacao(texto, contador);
+    }, 89);
+  }
+}
+
+digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
+
+
+</script>
