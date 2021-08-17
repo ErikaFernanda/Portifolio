@@ -217,3 +217,10 @@ a:hover {
   color: #7c83f7;
   -webkit-text-stroke: thin #99fa;
 }
+/* @media screen and(max-width:600px){
+  .sidebar{
+    display: none;
+   
+  }
+  
+} */
