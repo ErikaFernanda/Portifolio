@@ -24,10 +24,10 @@
                   <a href="#" onclick="page2()" ><i class="fab fa-linux"></i><p class="text-side">Formação</p></a>
                 </li>
                 <li class="list-item">
-                  <a href="#" ><i class="fab fa-html5"></i><p class="text-side">Habilidades</p></a>
+                  <a href="#"onclick="page3()" ><i class="fab fa-html5"></i><p class="text-side">Habilidades</p></a>
                 </li>
                 <li class="list-item">
-                  <a href="#"><i class="fab fa-css3-alt"></i><p class="text-side">Experiência</p></a>
+                  <a href="#" onclick="page4()"><i class="fab fa-css3-alt"></i><p class="text-side">Experiência</p></a>
                 </li>
                 <li class="list-item">
                   <a href="#"><i class="fab fa-js-square"></i><p class="text-side">Contato</p></a>
@@ -39,12 +39,12 @@
         <div class="back">
             <article class="center" id="page1">
               <div class="code">
-                <div class="pc">
+                <!-- <div class="pc"> -->
                   <div class="prompt">
                     <div class="texto-prompt">
                         <p class="saida" >C:\erikafernanda> </p>
                     </div>
-                  </div>
+                  <!-- </div> -->
                 </div>
                     
                 </div>
@@ -59,12 +59,27 @@
               <p>Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
             </div>
             </article>
-            <article class="center" id="page3"style="display: none;">
+            <article class="center" id="page3"style="display: none;flex-wrap: wrap;">
               
+              <div class="circle" style="width: 20em;height: 20em;"></div>
+              <div class="circle" style="width: 20em;height: 20em;"></div>
+              <div class="circle" style="width: 20em;height: 20em;"></div>
+              <div class="circle" style="width: 20em;height: 20em;"></div>
+              <div class="circle" style="width: 20em;height: 20em;"></div>
+              <div class="circle" style="width: 20em;height: 20em;"></div>
             </article>
             <article class="center" id="page4"style="display: none;">
+              <div style="display: flex; flex-flow: wrap;justify-content: center;">
+
               
-                
+              <div class="rec" ></div>
+              <div class="rec" ></div>
+              <div class="rec" ></div>
+              <div class="rec" ></div>
+              <div class="rec"></div>
+              <div class="rec"></div>
+
+            </div>
             </article>
         </div>
     </div>
@@ -124,7 +139,7 @@ function page1() {
   // digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
   
  
-  p1.style.display = "block";
+  p1.style.display = "flex";
   p2.style.display = "none";
   p3.style.display = "none";
   p4.style.display = "none";
@@ -141,14 +156,15 @@ function page2() {
 function page3() {
   p1.style.display = "none";
   p2.style.display = "none";
-  p3.style.display = "block";
+  p3.style.display = "flex";
   p4.style.display = "none";
+  console.log("AAAAAA p3")
 }
 function page4() { 
   p1.style.display = "none";
   p2.style.display = "none";
   p3.style.display = "none";
-  p4.style.display = "block";
+  p4.style.display = "flex";
   
 }
 
