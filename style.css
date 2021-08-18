@@ -43,8 +43,9 @@
   line-height: 1.1;
   padding: 1rem;
   width: 100%;
-  background-image:url("https://thumbs.dreamstime.com/b/tela-do-fundo-da-tecnologia-do-c%C3%B3digo-fonte-e-do-sum%C3%A1rio-95206313.jpg");
-  background-size:cover
+  background-color: #5183b2;
+  /* background-image:url("https://thumbs.dreamstime.com/b/tela-do-fundo-da-tecnologia-do-c%C3%B3digo-fonte-e-do-sum%C3%A1rio-95206313.jpg"); */
+  /* background-size:cover */
   /* filter: blur(5px);  */
 }
 body {
@@ -56,8 +57,8 @@ body {
 }
 article{
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 .pc{
   background-size: 40em;
@@ -71,6 +72,7 @@ article{
   }
 .code{
   background-image: url("assets/img/binario.png") ;
+  border-radius: 0em 1em 1em 0em;
  
 }
 
@@ -217,10 +219,14 @@ a:hover {
   color: #7c83f7;
   -webkit-text-stroke: thin #99fa;
 }
-/* @media screen and(max-width:600px){
-  .sidebar{
-    display: none;
-   
-  }
-  
-} */
+@media(max-width: 1000px) {
+  .user{
+     display:none
+   }
+   .sidebar{
+    width: 4rem;
+   }
+   .text-side{
+     display: none;
+   }
+ }
