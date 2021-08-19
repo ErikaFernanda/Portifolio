@@ -116,11 +116,20 @@ article{
   width: 4rem;
   height: min-content;
 }
+.rec-text{
+  background: #5183b2d4;
+  width: 100%;
+    display: none;
+    height: 100%;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
 .rec{
-  width: 20em;
+    width: 20em;
     height: 10em;
     margin: 14px;
-    background-color: aqua;
+    background-color: white;
     background-size: cover;
 }
 .hamburger {
@@ -219,6 +228,13 @@ a {
   font-weight: 400;
   font-size: 1rem;
   color: #222;
+}
+
+.rec:hover{
+  /* filter: brightness(0.5); */
+  border-style: solid;
+    border-width: 7px;
+    border-color:#efefef;
 }
 
 a:hover {

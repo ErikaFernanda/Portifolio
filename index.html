@@ -113,11 +113,31 @@
         <div style="display: flex; flex-flow: wrap;justify-content: center;">
 
 
-          <div class="rec" style="background-image: url(assets/img/p1.PNG);"></div>
-          <div class="rec" style="background-image: url(assets/img/p2.PNG);"></div>
-          <div class="rec" style="background-image: url(assets/img/p3.PNG);"></div>
-          <div class="rec" style="background-image: url(assets/img/p4.PNG);"></div>
-          <div class="rec" style="background-image: url(assets/img/p5.PNG);"></div>
+          <div class="rec" onmouseover="InREC(this)" onmouseout="OutREC(this)" style="background-image: url(assets/img/p1.PNG);">
+            <div class="rec-text">
+              <p >Sistema de inscrição da MUESTRA CIENTÍFICA LATINOAMERICANA realizada no Perú.Com esse sistema é possivel que o administrador gere carta de aceite automaticamente , assim como relatório de incrições.<a href="http://santarita.edu.pe/"target="http://santarita.edu.pe/">Click aqui para conhecê-lo</a> </p>
+            </div>
+          </div>
+          <div class="rec" onmouseover="InREC(this)" onmouseout="OutREC(this)" style="background-image: url(assets/img/p2.PNG);">
+              <div class="rec-text">
+                <p >Sistema de inscrição da MUESTRA CIENTÍFICA LATINOAMERICANA realizada no Perú.Com esse sistema é possivel que o administrador gere carta de aceite automaticamente , assim como relatório de incrições.<a href="http://santarita.edu.pe/">Click aqui para conhecê-lo</a> </p>
+              </div>
+          </div>
+          <div class="rec" onmouseover="InREC(this)" onmouseout="OutREC(this)" style="background-image: url(assets/img/p3.PNG);">
+            <div class="rec-text">
+              <p >Sistema de inscrição da MUESTRA CIENTÍFICA LATINOAMERICANA realizada no Perú.Com esse sistema é possivel que o administrador gere carta de aceite automaticamente , assim como relatório de incrições.<a href="http://santarita.edu.pe/">Click aqui para conhecê-lo</a> </p>
+            </div>
+          </div>
+          <div class="rec" onmouseover="InREC(this)" onmouseout="OutREC(this)" style="background-image: url(assets/img/p4.PNG);">
+            <div class="rec-text">
+              <p >Sistema de inscrição da MUESTRA CIENTÍFICA LATINOAMERICANA realizada no Perú.Com esse sistema é possivel que o administrador gere carta de aceite automaticamente , assim como relatório de incrições.<a href="http://santarita.edu.pe/">Click aqui para conhecê-lo</a> </p>
+            </div>
+          </div>
+          <div class="rec" onmouseover="InREC(this)" onmouseout="OutREC(this)" style="background-image: url(assets/img/p5.PNG);">
+            <div class="rec-text">
+              <p >Nesse jogo você precisa manter o equilíbrio entre se manter enérgico e ter uma alimentação saudável para que assim possa subir de nível . Para isso, basta você conseguir pegar os nutrientes que se pede durante sua corrida, e desviar dos que não são necessários no momento .<a href="https://erikafernanda.github.io/corridanutritiva/">Click aqui para conhecê-lo</a> </p>
+            </div>
+          </div>
 
 
 
@@ -151,9 +171,20 @@
       }, 90);
     }
   }
-
   digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.", 0);
 
+  function InREC(rec) {
+    var c = rec.childNodes;
+    c[1].style.display = "flex";
+  }
+ 
+  function OutREC(rec) {
+    // rec.style.backgroundImage = "url("+url+")";
+    // rec.style.backgroundSize= "100% 100%";
+    var c = rec.childNodes;
+    c[1].style.display = "none";
+  }
+ 
 
   function animacaoFormacao(margin_rigth, formacao) {
     if (0 <= margin_rigth) {
