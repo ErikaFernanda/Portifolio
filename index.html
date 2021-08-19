@@ -1,94 +1,136 @@
 <html>
-    <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="style.css" rel="stylesheet">
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+  integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <body>
-       <div class="main">
+<body>
+  <div class="main">
 
-       
-        <main class="sidebar">
-            
-            <div class="hamburger" onclick="toggleMenu();"></div>
-            <header class="user">
-              <i class="fas fa-user-alt"></i>
-              <h2 class="userName">Erika Fernanda </h2>
-              <p class="userText">Full-Stack Developer</p>
-            </header>
-            <nav class="navigation">
-              <ul class="nav-list">
-                <li class="list-item active">
-                  <a href="#" onclick="page1()"><i class="fab fa-codepen"></i><p class="text-side">Perfil pessoal</p></a>
-                </li>
-                <li class="list-item">
-                  <a href="#" onclick="page2()" ><i class="fab fa-linux"></i><p class="text-side">Formação</p></a>
-                </li>
-                <li class="list-item">
-                  <a href="#"onclick="page3()" ><i class="fab fa-html5"></i><p class="text-side">Habilidades</p></a>
-                </li>
-                <li class="list-item">
-                  <a href="#" onclick="page4()"><i class="fab fa-css3-alt"></i><p class="text-side">Experiência</p></a>
-                </li>
-                <li class="list-item">
-                  <a href="#"><i class="fab fa-js-square"></i><p class="text-side">Contato</p></a>
-                </li>
-              </ul>
-            </nav>
-            
-        </main>
-        <div class="back">
-            <article class="center" id="page1">
-              <div class="code">
-                <!-- <div class="pc"> -->
-                  <div class="prompt">
-                    <div class="texto-prompt">
-                        <p class="saida" >C:\erikafernanda> </p>
-                    </div>
-                  <!-- </div> -->
-                </div>
-                    
-                </div>
-            </article>
-            <article class="center" id="page2" style="display: none;">
-              <div class="circle_text" id ="formacao1">
-              <div class="circle img_radius" style="background-image: url('https://www.ufrn.br/resources/documentos/identidadevisual/brasao/brasao_flat.png')"> </div>
-              <p>Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+
+    <main class="sidebar">
+
+      <div class="hamburger" onclick="toggleMenu();"></div>
+      <header class="user">
+        <img src="assets/img/perfil.jpg" style="border-radius: 10em;width: 8em;" />
+
+
+        <h2 class="userName">Erika Fernanda </h2>
+        <p class="userText">Full-Stack Developer</p>
+      </header>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="list-item active">
+            <a href="#" onclick="page1()"><i class="fab fa-codepen"></i>
+              <p class="text-side">Perfil pessoal</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" onclick="page2()"><i class="fab fa-linux"></i>
+              <p class="text-side">Formação</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" onclick="page3()"><i class="fab fa-html5"></i>
+              <p class="text-side">Habilidades</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" onclick="page4()"><i class="fab fa-css3-alt"></i>
+              <p class="text-side">Experiência</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#"><i class="fab fa-js-square"></i>
+              <p class="text-side">Contato</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </main>
+    <div class="back">
+      <article class="center" id="page1">
+        <div class="code">
+          <!-- <div class="pc"> -->
+          <div class="prompt">
+            <div class="texto-prompt">
+              <p class="saida">C:\erikafernanda> </p>
             </div>
-            <div class="circle_text"id ="formacao2">
-              <div class="circle img_radius" style="background-image: url('https://portal.ifrn.edu.br/campus/paudosferros/noticias/proposta-da-lei-orcamentaria-2020-preocupa-ifrn/image_preview')"> </div>
-              <p>Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
-            </div>
-            </article>
-            <article class="center" id="page3"style="display: none;flex-wrap: wrap;">
-              
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-              <div class="circle" style="width: 20em;height: 20em;"></div>
-            </article>
-            <article class="center" id="page4"style="display: none;">
-              <div style="display: flex; flex-flow: wrap;justify-content: center;">
+            <!-- </div> -->
+          </div>
 
-              
-              <div class="rec" ></div>
-              <div class="rec" ></div>
-              <div class="rec" ></div>
-              <div class="rec" ></div>
-              <div class="rec"></div>
-              <div class="rec"></div>
-
-            </div>
-            </article>
         </div>
-    </div>
-    </body>
+      </article>
+      <article class="center" id="page2" style="display: none;">
+        <div class="circle_text" id="formacao1">
+          <div class="circle img_radius"
+            style="background-image: url('https://www.ufrn.br/resources/documentos/identidadevisual/brasao/brasao_flat.png')">
+          </div>
+          <p style="width: 35em;">Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos,
+            robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+        </div>
+        <div class="circle_text" id="formacao2">
+          <div class="circle img_radius"
+            style="background-image: url('https://portal.ifrn.edu.br/campus/paudosferros/noticias/proposta-da-lei-orcamentaria-2020-preocupa-ifrn/image_preview')">
+          </div>
+          <p style="width: 35em;">Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos,
+            robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+        </div>
+      </article>
+      <article class="center" id="page3" style="display: none;flex-wrap: wrap;">
 
-        
-        
-       
-        
+        <div class="circle cicle-p3"
+          style=" background-image: url('http://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style="background-image: url('https://www.ifpe.edu.br/campus/palmares/noticias/divulgado-resultado-do-curso-de-extensao-em-java/javalogo.png/@@images/69c46ffa-cc8a-402e-89b3-c8ac41c96431.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style="background-image: url('https://codersera.com/blog/wp-content/uploads/2020/01/React-native-android-1.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style="background-image: url('https://3.bp.blogspot.com/-k9I9bvyWUrU/WepKJ28TphI/AAAAAAAABTA/TikxY85qDbQO0ZqEmQ_UU8eRUE-lwGcEgCLcBGAs/s1600/cibtstrp.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style="background-image: url('data:image/jpeg;base64,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');">
+        </div>
+        <div class="circle cicle-p3"
+          style=" background-image: url('http://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style=" background-image: url('http://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png');">
+        </div>
+        <div class="circle cicle-p3"
+          style=" background-image: url('http://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png');">
+        </div>
+
+
+
+      </article>
+      <article class="center" id="page4" style="display: none;">
+        <div style="display: flex; flex-flow: wrap;justify-content: center;">
+
+
+          <div class="rec" style="background-image: url(assets/img/p1.PNG);"></div>
+          <div class="rec" style="background-image: url(assets/img/p2.PNG);"></div>
+          <div class="rec" style="background-image: url(assets/img/p3.PNG);"></div>
+          <div class="rec" style="background-image: url(assets/img/p4.PNG);"></div>
+          <div class="rec" style="background-image: url(assets/img/p5.PNG);"></div>
+
+
+
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+
+
+
+
+
 </html>
 <script>
   const p1 = document.getElementById("page1");
@@ -100,73 +142,73 @@
   const formacao2 = document.getElementById("formacao2");
   const sidebar = document.getElementsByClassName("sidebar");
 
-function digitacao(texto, contador) {
-  if (contador < texto.length) {
-    setTimeout(() => {
-      saida.textContent += texto.charAt(contador);
-      contador++;
-      digitacao(texto, contador);
-    }, 90);
+  function digitacao(texto, contador) {
+    if (contador < texto.length) {
+      setTimeout(() => {
+        saida.textContent += texto.charAt(contador);
+        contador++;
+        digitacao(texto, contador);
+      }, 90);
+    }
   }
-}
 
-digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
+  digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.", 0);
 
 
-function animacaoFormacao(margin_rigth, formacao) {
-  if (0 <= margin_rigth) {
-    setTimeout(() => {
-      formacao.style.marginLeft =margin_rigth;
-      margin_rigth=margin_rigth-1;
-      animacaoFormacao(margin_rigth,formacao);
-    }, 1);
-    
-  }
-  if(margin_rigth==0 && formacao==formacao1){
-    formacao2.style.display="flex";
-      animacaoFormacao(100,formacao2)
+  function animacaoFormacao(margin_rigth, formacao) {
+    if (0 <= margin_rigth) {
+      setTimeout(() => {
+        formacao.style.marginLeft = margin_rigth;
+        margin_rigth = margin_rigth - 1;
+        animacaoFormacao(margin_rigth, formacao);
+      }, 1);
 
     }
-  
-}
+    if (margin_rigth == 0 && formacao == formacao1) {
+      formacao2.style.display = "flex";
+      animacaoFormacao(100, formacao2)
+
+    }
+
+  }
 
 
 
 
-function page1() {
-  // clearTimeout(digitacao)
-  // saida.textContent="";
-  // digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
-  
- 
-  p1.style.display = "flex";
-  p2.style.display = "none";
-  p3.style.display = "none";
-  p4.style.display = "none";
- }
-function page2() {
+  function page1() {
+    // clearTimeout(digitacao)
+    // saida.textContent="";
+    // digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.",0);
 
-  p1.style.display = "none";
-  p2.style.display = "block";
-  p3.style.display = "none";
-  p4.style.display = "none";
-  formacao2.style.display="none";
-  animacaoFormacao(100,formacao1)
-}
-function page3() {
-  p1.style.display = "none";
-  p2.style.display = "none";
-  p3.style.display = "flex";
-  p4.style.display = "none";
-  console.log("AAAAAA p3")
-}
-function page4() { 
-  p1.style.display = "none";
-  p2.style.display = "none";
-  p3.style.display = "none";
-  p4.style.display = "flex";
-  
-}
+
+    p1.style.display = "flex";
+    p2.style.display = "none";
+    p3.style.display = "none";
+    p4.style.display = "none";
+  }
+  function page2() {
+
+    p1.style.display = "none";
+    p2.style.display = "block";
+    p3.style.display = "none";
+    p4.style.display = "none";
+    formacao2.style.display = "none";
+    animacaoFormacao(100, formacao1)
+  }
+  function page3() {
+    p1.style.display = "none";
+    p2.style.display = "none";
+    p3.style.display = "flex";
+    p4.style.display = "none";
+    console.log("AAAAAA p3")
+  }
+  function page4() {
+    p1.style.display = "none";
+    p2.style.display = "none";
+    p3.style.display = "none";
+    p4.style.display = "flex";
+
+  }
 
 
 </script>

@@ -7,12 +7,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.cicle-p3{
+
+    background-size: contain;
+    background-position: center;
+  
+}
 .circle{
-  margin: 2em;
-    width: 22em;
+      width: 10em;
+    margin: 2em;
     background-color: aliceblue;
-    height: 10em;
     border-radius: 10em;
+    height: 10em;
 }
 .img_radius{
     background-position: center;
@@ -111,10 +117,11 @@ article{
   height: min-content;
 }
 .rec{
-    width: 28em;
-    height: 17em;
+  width: 20em;
+    height: 10em;
     margin: 14px;
     background-color: aqua;
+    background-size: cover;
 }
 .hamburger {
   width: 1.6rem;
