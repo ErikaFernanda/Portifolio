@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.contact{
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+}
 .cicle-p3{
 
     background-size: contain;
