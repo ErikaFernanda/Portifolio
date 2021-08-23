@@ -7,6 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.icon-contact{
+  font-size: 30px;
+    color: #7c83f7;
+    margin: 10px;
+}
 .contact{
   width: 50%;
   height: 100%;
@@ -161,6 +166,7 @@ article{
 }
 
 .user {
+  margin-top: 1em;
   opacity: 1;
   border-bottom: 1px solid #0002;
   display: flex;
