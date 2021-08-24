@@ -67,15 +67,19 @@
           <div class="circle img_radius"
             style="background-image: url('https://www.ufrn.br/resources/documentos/identidadevisual/brasao/brasao_flat.png')">
           </div>
-          <p style="width: 35em;">Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos,
-            robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+          <p style="width: 35em;">Hello Word !
+            Meu nome é Erika, sou uma amante do mundo tecnológico na musica,
+            fotografia, jogos, robótica...Mas dedico uma atenção maior para a programação,
+            mais precisamente na linguagem JAVA. Gosto de novidades (e de porquinhos da índia), sigo buscando desafios em outras linguagens e frameworks.</p></p>
         </div>
         <div class="circle_text" id="formacao2">
           <div class="circle img_radius"
             style="background-image: url('https://portal.ifrn.edu.br/campus/paudosferros/noticias/proposta-da-lei-orcamentaria-2020-preocupa-ifrn/image_preview')">
           </div>
-          <p style="width: 35em;">Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos,
-            robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA</p>
+          <p style="width: 35em;">Hello Word !
+            Meu nome é Erika, sou uma amante do mundo tecnológico na musica,
+            fotografia, jogos, robótica...Mas dedico uma atenção maior para a programação,
+            mais precisamente na linguagem JAVA. Gosto de novidades (e de porquinhos da índia), sigo buscando desafios em outras linguagens e frameworks.</p></p>
         </div>
       </article>
       <article class="center" id="page3" style="display: none;flex-wrap: wrap;">
@@ -180,6 +184,7 @@
   const p4 = document.getElementById("page4");
   const p5 = document.getElementById("page5");
   const saida = document.querySelector(".saida");
+
   const formacao1 = document.getElementById("formacao1");
   const formacao2 = document.getElementById("formacao2");
   const sidebar = document.getElementsByClassName("sidebar");
@@ -187,13 +192,23 @@
   function digitacao(texto, contador) {
     if (contador < texto.length) {
       setTimeout(() => {
-        saida.textContent += texto.charAt(contador);
+
+        if(texto.charAt(contador)=='\n'){
+          saida.append(texto.charAt(contador));
+          saida.innerHTML += '<br>';
+        }
+        saida.append(texto.charAt(contador));
         contador++;
         digitacao(texto, contador);
       }, 90);
     }
   }
-  digitacao("Sempre em busca de conhecimento tecnológico no mundo da musica, fotografia, jogos, robótica. Mas existe uma atenção redobrada para a programação , mas precisamente na linguagem JAVA.", 0);
+  digitacao("Hello Word !\n"+
+            "Meu nome é Erika, sou uma amante do mundo tecnológico na musica, "
+            +"fotografia, jogos, robótica...Mas dedico uma atenção maior para a programação, "
+            +"mais precisamente na linguagem JAVA. Gosto de novidades (e de porquinhos da índia), "
+            +"sigo buscando desafios em outras linguagens e frameworks (e terminar minha graduação em Engenharia da Computação)."
+            +"Obigada por vir até aqui. <3 ^-^", 0);
 
   function InREC(rec) {
     var c = rec.childNodes;
